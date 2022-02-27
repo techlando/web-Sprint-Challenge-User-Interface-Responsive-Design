@@ -338,7 +338,7 @@ footer nav a{
     text-align: right;
     font-size: 2rem;
 }
-button{
+button input{
     height: 20%;
     width: 10vw;
     padding-bottom: 10%;
@@ -350,54 +350,55 @@ button{
 @media (max-width: 428px) {
     /* header section */
     *{
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
     header{
-        /* height: 100vh;
-        justify-items: center; */
-       
+        height: 100vh;
+        width: 100%;
+        
     }
-    /* div{
-       height: 50vh;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-evenly;
-        */
-       
-    
-    /* } */
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+    }
+   
     a{
         font-size: 2.5rem;
     }
     
    
-    
+    /*gallery*/
 
-    /* .gallery {
-        height: 200vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    } */
-    /* .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
-        
-        height: 20vh;
-        width: 100vw;
-        
-       
-         */
-        /* border: 2px solid black; */
-        
-    /* } */
+    .gallery {
+        width: 100%;
+    }
+    img{
+       width: 100%;
+       height: 40vh;
+    }
+   
     .container{
         width: 100%;
+       /* display: block; */
+       padding: 0 0;
+       gap: 20px;
+       
+
     }
   
     
     /* about us section */
 
     .about {
-        height: ;
+        height: 100vh;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-around; */
     }
     
     .about h2 {
@@ -405,8 +406,15 @@ button{
         padding-top: 5vh;
     }
     
+    
     .about-container .text {
-        width: 85%;
+        height: 100vh;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
     }
     
     /* contact us section */
@@ -437,5 +445,19 @@ button{
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .copyright{
+        font-size: 1.4rem;
     }
 }
