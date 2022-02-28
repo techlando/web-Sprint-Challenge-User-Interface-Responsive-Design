@@ -116,7 +116,15 @@ header {
 } 
 header nav{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+header .links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
 }
 .back{
     width: 100%;
@@ -313,7 +321,7 @@ footer {
     
     
 }
-.mail{
+#mail{
     width: 40%;
 }
 .link{
