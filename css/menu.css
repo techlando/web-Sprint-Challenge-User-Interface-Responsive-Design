@@ -253,7 +253,7 @@ footer nav a{
         /* border: 1px solid red; */
     }
     .header-title {
-        width: 75%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         font-size: 4rem;
@@ -262,11 +262,23 @@ footer nav a{
       height: 100vh;
       background-size: cover;
    }
-   header nav{
+   header .links{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+   }
+   header a{
+       display: flex;
        flex-direction: column;
    }
-    div .back{
+    header .back{
         height: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        
     }
     .social{
         display: flex;
@@ -276,12 +288,12 @@ footer nav a{
 
     /* menu */
     .menu {
-        background-image: none;
+        /* background-image: none; */
         background-color: rgb(225, 239, 230);
         color: black;
         
     }
-    .container{
+    .menu-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -289,14 +301,14 @@ footer nav a{
         
         
     }
-   .text{
+   .{
        width: 100%;
        color: solid black;
    }
-   .text h4, p{
+    h4, p{
        color: black;
    }
-    .text h3{
+    h3{
         width: 50vw;
         border: 2px solid black;
         display: flex;
@@ -304,7 +316,7 @@ footer nav a{
         color: black;
        
     }
-    .text p{
+     p{
         border-bottom: 2px solid black;
         font-size: 2rem;
     }
@@ -362,5 +374,6 @@ footer nav a{
     }
     .copyright{
         font-size: 1.4rem;
+        text-align: center;
     }
 }
